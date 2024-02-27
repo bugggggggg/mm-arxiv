@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://llava-vl.github.io/ -->
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete" lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="description" content="Vision-Language Feedback">
+  <meta name="keywords" content="multimodal chatbot">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multimodal ArXiv</title>
+
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.3333333333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-both,
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2.5em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+
+    .svg-inline--fa .fa-primary {
+      fill: var(--fa-primary-color, currentColor);
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1)
+    }
+
+    .svg-inline--fa .fa-secondary {
+      fill: var(--fa-secondary-color, currentColor);
+      opacity: .4;
+      opacity: var(--fa-secondary-opacity, .4)
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-primary {
+      opacity: .4;
+      opacity: var(--fa-secondary-opacity, .4)
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-secondary {
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1)
+    }
+
+    .svg-inline--fa mask .fa-primary,
+    .svg-inline--fa mask .fa-secondary {
+      fill: #000
+    }
+
+    .fad.fa-inverse {
+      color: #fff
+    }
+  </style>
+  <link rel="stylesheet" href="./LLaVA_files/css">
+  <link rel="stylesheet" href="./LLaVA_files/bulma.min.css">
+  <link rel="stylesheet" href="./LLaVA_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./LLaVA_files/academicons.min.css">
+  <link rel="stylesheet" href="./LLaVA_files/all.min.css">
+  <link rel="stylesheet" href="./LLaVA_files/index.css">
+  <link rel="icon" href="./LLaVA_files/silkie.png">
+  <link href="./LLaVA_files/icon" rel="stylesheet">
+
+
+  <script src="./LLaVA_files/jquery.min.js"></script>
+  <script defer="" src="./LLaVA_files/all.min.js"></script>
+  <script type="module" src="./LLaVA_files/gradio.js"></script>
+  <style>
+    .expandable-card .card-text-container {
+      max-height: 200px;
+      overflow-y: hidden;
+      position: relative;
+    }
+
+    .expandable-card.expanded .card-text-container {
+      max-height: none;
+    }
+
+    .expand-btn {
+      position: relative;
+      display: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      /* margin-top: -20px; */
+      /* justify-content: center; */
+      color: #510c75;
+      border-color: transparent;
+    }
+
+    .expand-btn:hover {
+      background-color: rgba(200, 200, 200, 0.8);
+      text-decoration: none;
+      border-color: transparent;
+      color: #510c75;
+    }
+
+    .expand-btn:focus {
+      outline: none;
+      text-decoration: none;
+    }
+
+    .expandable-card:not(.expanded) .card-text-container:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+    }
+
+    .expandable-card:not(.expanded) .expand-btn {
+      margin-top: -40px;
+    }
+
+    .card-body {
+      padding-bottom: 5px;
+    }
+
+    .vertical-flex-layout {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .figure-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .adjustable-font-size {
+      font-size: calc(0.5rem + 2vw);
+    }
+
+    .chat-history {
+      flex-grow: 1;
+      overflow-y: auto;
+      /* overflow-x: hidden; */
+      padding: 5px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    #gradio pre {
+      background-color: transparent;
+    }
+  </style>
+  <script type="module" crossorigin="" src="./LLaVA_files/index-9405f928.js"></script>
+  <link rel="stylesheet" href="./LLaVA_files/index-8f5e8d2d.css">
+  <link rel="stylesheet" href="./LLaVA_files/theme.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Blocks-b7e1d3bc.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Button-496612d6.js">
+  <link rel="stylesheet" href="./LLaVA_files/Button-3657eefc.css">
+  <link rel="stylesheet" href="./LLaVA_files/Blocks-005a10ea.css">
+  <link rel="stylesheet" href="./LLaVA_files/css2">
+  <link rel="stylesheet" href="./LLaVA_files/css2(1)">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-7da00dd0.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="./LLaVA_files/index-9405f928.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-e350ed90.js">
+  <link rel="stylesheet" href="./LLaVA_files/index-edf307d2.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-9454ebde.js">
+  <link rel="stylesheet" href="./LLaVA_files/index-93c91554.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-29aa4c6e.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Column-56337312.js">
+  <link rel="stylesheet" href="./LLaVA_files/Column-2853eb31.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-6c061571.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/BlockTitle-3b63dcc6.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Info-88fa40fc.js">
+  <link rel="stylesheet" href="./LLaVA_files/ColorPicker-41813019.css">
+  <link rel="stylesheet" href="./LLaVA_files/DropdownArrow-5fa4dd09.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-dc4f9a55.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/BlockLabel-eae79103.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Image-0296a7e2.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/StaticImage.svelte_svelte_type_style_lang-943673fc.js">
+  <link rel="stylesheet" href="./LLaVA_files/StaticImage-ede66243.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/ModifyUpload-3ceaec64.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/ModifyUpload.svelte_svelte_type_style_lang-ba6baa96.js">
+  <link rel="stylesheet" href="./LLaVA_files/ModifyUpload-77b0d4b2.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Upload-0b7d7edd.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Empty-0bf01d93.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Download-836e8a5d.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/UploadText-67055cc3.js">
+  <link rel="stylesheet" href="./LLaVA_files/UploadText-33d53a1c.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Image-4f594cb8.js">
+  <link rel="stylesheet" href="./LLaVA_files/Image-003ee87c.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-fb7b6d6a.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-4360065a.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/_commonjsHelpers-042e6b4d.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/csv-b0b7514a.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/dsv-576afacd.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Model3D-49e4759c.js">
+  <link rel="stylesheet" href="./LLaVA_files/Model3D-98fc2b2c.css">
+  <link rel="stylesheet" href="./LLaVA_files/index-4a8edf2e.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-544cdc5f.js">
+  <link rel="stylesheet" href="./LLaVA_files/index-8f1feca1.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-efacc33c.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-5ff6e9da.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Form-e2ba6e12.js">
+  <link rel="stylesheet" href="./LLaVA_files/Form-a4a7741e.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-74280621.js">
+  <link rel="stylesheet" href="./LLaVA_files/index-d9aad8e1.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-f67a924c.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Textbox-91bfa043.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/Copy-4761247d.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-00a3ebda.js">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/assets/index-1c9d35e7.js">
+  <link rel="stylesheet" href="./LLaVA_files/index-3ca142e0.css">
+  <script async="" defer="" src="./LLaVA_files/js"></script>
+</head>
+
+
+<body data-new-gr-c-s-check-loaded="14.1126.0" data-gr-ext-installed="">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- <h1 class="title is-1 publication-title">VLFeedback and Silkie</h1> -->
+            <!-- <h1 class="title is-1 publication-title">
+              <img src="./LLaVA_files/silkie.png" alt="VLFeedback and Silkie" style="height: 50px; width: 50px;"> VLFeedback and Silkie
+          </h1> -->
+            <h1 class="title is-1 publication-title">
+              <span style="display: inline-block; vertical-align: middle;">Multimodal ArXiv</span>
+              <!-- <span style="display: inline-block; vertical-align: middle; margin-top: -15px; margin-left: -7px;">
+                <img src="./LLaVA_files/silkie.png" alt="VLFeedback and Silkie" style="height: 50px; width: 50px;">
+            </span> -->
+            </h1>
+            <h3 class="title is-3 publication-title">A Dataset for Improving Scientific Comprehension of Large
+              Vision-Language Models</h3>
+            <div class="is-size-5">
+              <span class="author-block">
+                <a href="https://lilei-nlp.github.io" style="color:#008AD7;font-weight:normal;">Lei Li</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://bugggggggg.github.io/" style="color:#008AD7;font-weight:normal;">Yuqi Wang</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=BizedOAAAAAJ"
+                  style="color:#94070A;font-weight:normal;">Runxin Xu</a>,
+              </span> <br>
+              <span class="author-block">
+                <a href="https://scholar.google.com.tw/citations?user=K0uQ3ygAAAAJ"
+                  style="color:#94070A;font-weight:normal;">Peiyi Wang</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/Shunian-Chen" style="color:#008AD7;font-weight:normal;">Xiachong Feng</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://chenllliang.github.io/about/" style="color:#008AD7;font-weight:normal;">Liang Chen</a>,
+              </span> <br>
+              <span class="author-block">
+                <a href="https://ikekonglp.github.io/" style="color:#008AD7;font-weight:normal;">Lingpeng Kong</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://ikekonglp.github.io/" style="color:#008AD7;font-weight:normal;">Qi Liu</a>,
+              </span>
+              </span>
+            </div>
+
+            <br>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><b style="color:#008AD7; font-weight:normal">▶ </b>The University of Hong
+                Kong</span>
+              <br>
+              <span class="author-block"><b style="color:#94070A; font-weight:normal">▶ </b>Peking University</span>
+              <br>
+              <!-- <span class="author-block">&nbsp;&nbsp;<sup>*</sup>Equal Contribution</span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2312.10665" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-database fa-w-14" aria-hidden="true" focusable="false"
+                        id="primary_logo" data-name="primary logo" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 246.978 111.119">
+                        <path
+                          d="M427.571,255.154c1.859,0,3.1,1.24,3.985,3.453,1.062-2.213,2.568-3.453,4.694-3.453h14.878a4.062,4.062,0,0,1,4.074,4.074v7.828c0,2.656-1.327,4.074-4.074,4.074-2.656,0-4.074-1.418-4.074-4.074V263.3H436.515a2.411,2.411,0,0,0-2.656,2.745v27.188h10.007c2.658,0,4.074,1.329,4.074,4.074s-1.416,4.074-4.074,4.074h-26.39c-2.659,0-3.986-1.328-3.986-4.074s1.327-4.074,3.986-4.074h8.236V263.3h-7.263c-2.656,0-3.985-1.329-3.985-4.074,0-2.658,1.329-4.074,3.985-4.074Z"
+                          transform="translate(-358.165 -222.27)" fill="#7c7469" />
+                        <path
+                          d="M539.233,255.154c2.656,0,4.074,1.416,4.074,4.074v34.007h10.1c2.746,0,4.074,1.329,4.074,4.074s-1.328,4.074-4.074,4.074H524.8c-2.656,0-4.074-1.328-4.074-4.074s1.418-4.074,4.074-4.074h10.362V263.3h-8.533c-2.744,0-4.073-1.329-4.073-4.074,0-2.658,1.329-4.074,4.073-4.074Zm4.22-17.615a5.859,5.859,0,1,1-5.819-5.819A5.9,5.9,0,0,1,543.453,237.539Z"
+                          transform="translate(-358.165 -222.27)" fill="#7c7469" />
+                        <path
+                          d="M605.143,259.228a4.589,4.589,0,0,1-.267,1.594L590,298.9a3.722,3.722,0,0,1-3.721,2.48h-5.933a3.689,3.689,0,0,1-3.808-2.48l-15.055-38.081a3.23,3.23,0,0,1-.355-1.594,4.084,4.084,0,0,1,4.164-4.074,3.8,3.8,0,0,1,3.718,2.656l14.348,36.134,13.9-36.134a3.8,3.8,0,0,1,3.72-2.656A4.084,4.084,0,0,1,605.143,259.228Z"
+                          transform="translate(-358.165 -222.27)" fill="#7c7469" />
+                        <path
+                          d="M486.149,277.877l-32.741,38.852c-1.286,1.372-2.084,3.777-1.365,5.5a4.705,4.705,0,0,0,4.4,2.914,4.191,4.191,0,0,0,3.16-1.563l40.191-42.714a4.417,4.417,0,0,0,.042-6.042Z"
+                          transform="translate(-358.165 -222.27)" fill="#aa142d" />
+                        <path
+                          d="M486.149,277.877l31.187-38.268c1.492-1.989,2.2-3.03,1.492-4.723a5.142,5.142,0,0,0-4.481-3.161h0a4.024,4.024,0,0,0-3.008,1.108L472.711,274.6a4.769,4.769,0,0,0,.015,6.53L520.512,332.2a3.913,3.913,0,0,0,3.137,1.192,4.394,4.394,0,0,0,4.027-2.818c.719-1.727-.076-3.438-1.4-5.23l-40.124-47.464"
+                          transform="translate(-358.165 -222.27)" fill="#7c7469" />
+                        <path
+                          d="M499.833,274.828,453.169,224.4s-1.713-2.08-3.524-2.124a4.607,4.607,0,0,0-4.338,2.788c-.705,1.692-.2,2.88,1.349,5.1l40.093,48.422"
+                          transform="translate(-358.165 -222.27)" fill="#aa142d" />
+                        <path
+                          d="M390.61,255.154c5.018,0,8.206,3.312,8.206,8.4v37.831H363.308a4.813,4.813,0,0,1-5.143-4.929V283.427a8.256,8.256,0,0,1,7-8.148l25.507-3.572v-8.4H362.306a4.014,4.014,0,0,1-4.141-4.074c0-2.87,2.143-4.074,4.355-4.074Zm.059,38.081V279.942l-24.354,3.4v9.9Z"
+                          transform="translate(-358.165 -222.27)" fill="#7c7469" />
+                      </svg>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
+                  <a href="https://github.com/vlf-silkie/VLFeedback" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/MMInstruction/ArxivCap" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-database fa-w-14" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="database" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z">
+                        </path>
+                      </svg><!-- <i class="fas fa-database"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+
+                <!-- <span class="link-block">
+                  <a href="https://huggingface.co/MMInstruction/Silkie" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-share-square fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="share-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M568.482 177.448L424.479 313.433C409.3 327.768 384 317.14 384 295.985v-71.963c-144.575.97-205.566 35.113-164.775 171.353 4.483 14.973-12.846 26.567-25.006 17.33C155.252 383.105 120 326.488 120 269.339c0-143.937 117.599-172.5 264-173.312V24.012c0-21.174 25.317-31.768 40.479-17.448l144.003 135.988c10.02 9.463 10.028 25.425 0 34.896zM384 379.128V448H64V128h50.916a11.99 11.99 0 0 0 8.648-3.693c14.953-15.568 32.237-27.89 51.014-37.676C185.708 80.83 181.584 64 169.033 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48v-88.806c0-8.288-8.197-14.066-16.011-11.302a71.83 71.83 0 0 1-34.189 3.377c-7.27-1.046-13.8 4.514-13.8 11.859z"></path></svg>
+                    </span>
+                    <span>Model</span>
+                  </a>
+                </span> -->
+
+
+                <!-- <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                  </a>
+              </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="background-color:#efeff081">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Large vision-language models (LVLMs), exemplified by GPT-4V, excel across diverse tasks involving concrete
+              images from natural scenes.
+              However, their ability to interpret abstract figures, such as geometry shapes and scientific plots,
+              remains limited due to a scarcity of training datasets in scientific domains.
+              To fill this gap, we introduce Multimodal ArXiv, consisting of ArXivCap and ArXivQA, for enhancing LVLMs
+              scientific comprehension.
+              ArXivCap is a figure-caption dataset comprising 6.4M images and 3.9M captions sourced from 572K ArXiv
+              papers spanning various scientific domains.
+              Drawing from ArXivCap, we introduce ArXivQA, a question-answering dataset generated by prompting GPT-4V
+              based on scientific figures.
+              ArXivQA greatly enhances LVLMs' mathematical reasoning capabilities, achieving a 10.4\% absolute accuracy
+              gain on a multimodal mathematical reasoning benchmark.
+              Furthermore, employing ArXivCap, we devise four vision-to-text tasks for benchmarking LVLMs.
+              Evaluation results with state-of-the-art LVLMs underscore their struggle with the nuanced semantics of
+              academic figures, with domain-specific training yielding substantial performance gains.
+              Our error analysis uncovers misinterpretations of visual context, recognition errors, and the production
+              of overly simplified captions by current LVLMs, shedding light on future improvements.
+            <p></p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3"><img id="painting_icon" width="3%" src=""> Multimodal ArXiv
+        </h2>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              Comparison with previous scientific figure datasets. Our ArXivCap is the largest captioning dataset and our ArXivQA is the only QA dataset that covers a wide range of domains from real papers.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="80%" src="./LLaVA_files/figs/comparison.png">
+              </div>
+            </centering>
+
+            <br><br>
+
+            <p>
+              Overview of our dataset curation process. Starting from the ArXiv paper source files, we ensure the paper
+              quality by selecting papers according to publication records. Figure and caption pairs are extracted and
+              then cleaned according to manually designed rules. ArXivQA is generated by prompting GPT-4V with a curated
+              template.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="80%" src="./LLaVA_files/figs/pipeline.png">
+              </div>
+            </centering>
+
+            <br><br>
+
+            <p>
+              Prompt used for GPT-4V to generate QA pairs based on scientific figures.
+            </p>
+            <div style="width: 80%; padding: 10px; border: 5px solid gray; margin: 0;">
+              <centering >
+                Multiple-choice Question Answer Pairs Generation for Scientific Figures
+                <br>
+                <strong>Guideline</strong>
+                <br>
+                The goal of this task is to create answerable multiple-choice questions based on figures from scientific papers, to improve the ability of a large vision language model.
+                <br>
+                The questions should be challenging, and require college-level reasoning. The type of questions should be diverse. The question should be answerable based on the figure. The answer should be one of the answer choices. The answer choices should be plausible and challenging. 
+                <br>
+                <strong>Format</strong>
+                <br>
+                Below is an example of the format of the input and output for the task.
+                <br>
+                <strong>Input</strong>
+                <br>
+                Figures: [Figures input in the task]
+                <br>
+                <strong>Output</strong>
+                <br>
+                Question: [Question]
+                <br>
+                Answer Options: [Answer choices, a bullet list.]
+                <br>
+                Correct Choice: [Correct answer choice, e.g., A]
+                <br>
+                Rationale: [Rationale for the correct answer, explain why the answer is correct]
+              </centering>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3"><img id="painting_icon" width="3%" src=""> Example
+        </h2>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              A single-figure caption pair in our ArXivCap dataset. (The figure and caption are from <a href="https://arxiv.org/abs/1908.04642">paper arxiv:1908.04642</a>.)
+
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="40%" src="./LLaVA_files/figs/single-figure.png">
+              </div>
+            </centering>
+            <br><br>
+
+            <p>
+              A multiple-figure caption pair in our ArXivCap dataset. (The figure and caption are from <a href="https://arxiv.org/abs/1810.10761">paper arxiv:1810.10761</a>.)
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="40%" src="./LLaVA_files/figs/multiple-figure.png">
+              </div>
+            </centering>
+            <br><br>
+
+            <p>
+              A case from ArXivQA. (The figure and caption are from <a href="https://arxiv.org/abs/2011.09217">paper arxiv:2011.09217</a>.)
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="40%" src="./LLaVA_files/figs/arxivqa_case.png">
+              </div>
+            </centering>
+
+            <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3"><img id="painting_icon" width="5%" src=""> Evaluation</h2>
+        <!-- <h2 class="title is-3"><img id="painting_icon" width="3%" src="./LLaVA_files/silkie.png"> Silkie: A Better Aligned LVLM </h2> -->
+      </div>
+    </div>
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              Evaluation on MathVista dataset. ArXivCap and ArXivQA together enhance Qwen-VL-Chat's overall performance, surpassing that of the commercial model Bard. The best results are highlighted in <strong>bold</strong>, while the second-best scores are marked with <u>underline</u>.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="70%" src="./LLaVA_files/figs/eval_mathvista.png">
+              </div>
+            
+            </centering>
+            <br><br>
+
+            <p>
+              Evaluation results of single figure captioning. <a style="color: grey;">Grey</a> results are obtained from a 200-sample subset. Despite most LVLMs struggling to produce high-quality captions of scientific figures, training with ArXivCap significantly boosts the performance.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="40%" src="./LLaVA_files/figs/eval_caption.png">
+              </div>
+            </centering>
+            <br><br>
+
+            <p>
+              Relative accuracy changes brought by the training on different domain ArXivQA samples.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="60%" src="./LLaVA_files/figs/domain_performance.png">
+              </div>
+            </centering>
+            <br><br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h3 class="title is-3"> Manual Evaluation</h3>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              We conduct a manual inspection for single-figure captioning results. To ensure a more informed evaluation, we focus on a paper from the CS domain, leveraging our domain knowledge to assess caption quality better.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="70%" src="./LLaVA_files/figs/caption_error_type.png">
+                <img id="teaser" width="50%" src="./LLaVA_files/figs/pie_chart.png">
+              </div>
+            </centering>
+            <br><br> 
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="section">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h3 class="title is-3">Case Study</h3>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              ArXivQA enables the model not only to answer questions related to scientific figures in papers (left) but also to improve mathematical understanding ability (right). The model not only selects correct options but also gives reasonable rationale.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="70%" src="./LLaVA_files/figs/mathvista_case_study.png">
+              </div>
+            </centering>
+            <br><br> 
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        TODO(yuqi): add bibtex
+  <!-- @article{2023vlfeedback,
+    author      = {Lei Li and Zhihui Xie and Mukai Li and Shunian Chen and Peiyi Wang and Liang Chen and  Yazheng Yang and  Benyou Wang and  Lingpeng Kong},
+    title       = {Silkie: Preference Distillation for Large Visual Language Models},
+    publisher   = {arXiv:2312.10665},
+    year        = {2023}
+  } -->
+  </code></pre>
+    </div>
+  </section>
+
+
+  <section class="section" id="Acknowledgement">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgement</h2>
+      <p>
+        This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a
+          href="https://llava-rlhf.github.io/">LLaVA-RLHF</a>, licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
+        <!-- We thank the authors of the multi-modal instruction tuning datasets and open-source projects, including LLaVA, LLaVA-RLHF and Qwen-VL.  -->
+        <!-- We would thank <a href="https://runxinxu.github.io/aboutme/">Runxin Xu</a> for his great help on the project. -->
+      </p>
+
+      <p>
+        <b>Usage and License Notices</b>: The data, code and checkpoint is intended and licensed for research use only.
+        They are also restricted to uses that follow the license agreement of Qwen-VL and GPT-4. The dataset is CC BY NC
+        4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of
+        research purposes.
+      </p>
+
+      <p>
+        <!-- <a href="https://github.com/Computer-Vision-in-the-Wild/"><img id="painting_icon" width="10%" src="./LLaVA_files/97258247"></a>  -->
+        Related Links:
+        <!-- <a href="https://llava.hliu.cc/">[LLaVA] </a>     
+      <a href="https://llava-rlhf.github.io/">[LLaVA-RLHF] </a>       -->
+        <a href="https://github.com/QwenLM/Qwen-VL/">[Qwen-VL] </a>
+
+      </p>
+    </div>
+  </section>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open">
+    <style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style>
+
+    <div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration"
+      data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}">
+    </div>
+  </template></grammarly-desktop-integration>
+
+</html>
